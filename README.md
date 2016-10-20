@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------
-*batespdf* - *PDF Bates Stamper* in Python3
+*pdfbates* - *PDF Bates Stamper* in Python3
 ------------------------------------------------------------------------------
 
   Credit for this script is due primarily to:
@@ -11,9 +11,10 @@
   Usage:
   
     ```
-    $ ./batespdf.py
-      Usage: ./batespdf.py [input PDF] [prefix string]
-         eg. ./batespdf.py DOC00001.pdf DOC00001
+    $ ./pdfbates.py
+      Usage: ./pdfbates.py [input PDF] [prefix string]
+         eg. ./pdfbates.py DOC00001.pdf "DOC00001."
+         eg. ./pdfbates.py DOC00002.pdf ""
              Notes: - both arguments are mandatory.
                     - output filename has "-bates-numbered.pdf" appended.
     ```

@@ -8,7 +8,8 @@ from io import BytesIO
 
 if (len(sys.argv) < 3):
   print("Usage: " + sys.argv[0] + " [input PDF] [prefix string]")
-  print("   eg. " + sys.argv[0] + " DOC00001.pdf DOC00001")
+  print("   eg. " + sys.argv[0] + " DOC00001.pdf \"DOC00001\"")
+  print("   eg. " + sys.argv[0] + " DOC00001.pdf \"\"")
   print("       Notes: - both arguments are mandatory.")
   print("              - output file has \"-bates-numbered.pdf\" appended to the filename.")
   sys.exit(1)
