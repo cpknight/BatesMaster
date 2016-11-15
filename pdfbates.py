@@ -42,7 +42,7 @@ pageCanvas = canvas.Canvas(pageData,pagesize=(pageWidth,pageHeight))
 for i in range(0,numberOfPages):
   numberLength = len("000")  # 3, but code retained for future tweaking
   pageCanvas.setFont("Courier", 10) # need to reset font for each page
-  pageCanvas.setFillColorRGB(0.95,0.65,0.65)
+  pageCanvas.setFillColorRGB(0.25,0,0) # colour needed for post-conversion to TIFF
   batesNumber = str(pageCanvas.getPageNumber()).zfill(numberLength) 
   stampString = sys.argv[2] + batesNumber
   stampPosition = "top-right"
